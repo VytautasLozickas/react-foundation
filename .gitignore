@@ -1,0 +1,8 @@
+# IDE
+.idea
+
+# Vendor packages
+node_modules
+
+# Build directories
+/dist
