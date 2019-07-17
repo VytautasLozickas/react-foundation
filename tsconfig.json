@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "noEmit": true,
+    "module": "commonjs",
     "target": "esnext",
     "lib": ["es6", "dom"],
     "jsx": "react",
@@ -10,5 +11,8 @@
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }
