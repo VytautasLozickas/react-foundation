@@ -1,17 +1,22 @@
 {
   "compilerOptions": {
     "noEmit": true,
+    "baseUrl": ".",
     "module": "commonjs",
     "target": "esnext",
     "lib": ["es6", "dom"],
     "jsx": "react",
     "moduleResolution": "node",
+    "experimentalDecorators": true,
     "isolatedModules": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "types": ["node"]
+    "types": ["node"],
+    "paths": {
+      "app/*": ["src/*"]
+    }
   },
   "exclude": [
     "node_modules"

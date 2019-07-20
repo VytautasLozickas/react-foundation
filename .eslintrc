@@ -17,13 +17,41 @@
     }
   },
   "rules": {
+    "lines-between-class-members": "error",
     "newline-before-return": "error",
     "newline-after-var": "error",
-    "import/order": ["error", {"newlines-between": "always"}],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          [
+            "builtin",
+            "external"
+          ],
+          [
+            "internal"
+          ],
+          [
+            "parent"
+          ],
+          [
+            "sibling",
+            "index"
+          ]
+        ],
+        "newlines-between": "always"
+      }
+    ],
     "import/newline-after-import": "error",
     "import/no-unused-modules": "error",
     "import/no-cycle": "error",
-    "@typescript-eslint/explicit-member-accessibility": ["error", {"accessibility": "no-public"}]
+    "@typescript-eslint/explicit-member-accessibility": [
+      "error",
+      {
+        "accessibility": "no-public"
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": ["error", {"allowExpressions": true}]
   },
   "settings": {
     "react": {
