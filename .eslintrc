@@ -17,14 +17,12 @@
     }
   },
   "rules": {
-    "import/no-unused-modules": "error",
-    "import/no-cycle": "error",
-    "import/order": ["error", {
-      "newlines-between": "always"
-    }],
-    "import/newline-after-import": "error",
+    "newline-before-return": "error",
     "newline-after-var": "error",
-    "newline-before-return": "error"
+    "import/order": ["error", {"newlines-between": "always"}],
+    "import/newline-after-import": "error",
+    "import/no-unused-modules": "error",
+    "import/no-cycle": "error"
   },
   "settings": {
     "react": {
