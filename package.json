@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel ./src/index.html --no-autoinstall",
-    "lint": "eslint . --ext .ts,.tsx --fix && tsc"
+    "lint": "tsc && eslint . --ext .ts,.tsx --fix"
   },
   "husky": {
     "hooks": {
@@ -12,9 +12,9 @@
     }
   },
   "lint-staged": {
-    "**/*.ts?(x)": [
-      "eslint --fix",
-      "tsc"
+    "*.{ts,tsx}": [
+      "npm run lint --",
+      "git add"
     ]
   },
   "dependencies": {
