@@ -22,7 +22,8 @@
     "import/order": ["error", {"newlines-between": "always"}],
     "import/newline-after-import": "error",
     "import/no-unused-modules": "error",
-    "import/no-cycle": "error"
+    "import/no-cycle": "error",
+    "@typescript-eslint/explicit-member-accessibility": ["error", {"accessibility": "no-public"}]
   },
   "settings": {
     "react": {

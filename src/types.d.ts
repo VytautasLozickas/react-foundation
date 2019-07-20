@@ -5,3 +5,9 @@ declare module '*.scss' {
 
     export default classes;
 }
+
+declare interface SimpleObject<T = unknown> {
+    [key: string]: T;
+}
+
+declare type Nullable<T> = T | null;
