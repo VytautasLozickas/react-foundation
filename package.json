@@ -4,17 +4,17 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel ./src/index.html --no-autoinstall",
-    "lint": "tsc --noEmit && lint-staged"
+    "lint": "eslint . --ext .ts,.tsx --fix && tsc"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx,jsx}": [
+    "**/*.ts?(x)": [
       "eslint --fix",
-      "git add"
+      "tsc"
     ]
   },
   "dependencies": {
