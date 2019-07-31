@@ -45,6 +45,7 @@
     "import/newline-after-import": "error",
     "import/no-unused-modules": "error",
     "import/no-cycle": "error",
+    "react/display-name": "off",
     "@typescript-eslint/explicit-member-accessibility": [
       "error",
       {
