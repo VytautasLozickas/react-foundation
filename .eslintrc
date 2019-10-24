@@ -46,6 +46,7 @@
     "import/no-unused-modules": "error",
     "import/no-cycle": "error",
     "react/display-name": "off",
+    "react/prop-types": "off",
     "@typescript-eslint/explicit-member-accessibility": [
       "error",
       {

@@ -1,12 +1,23 @@
 {
   "presets": [
-    ["@babel/preset-typescript"]
+    [
+      "@babel/preset-typescript"
+    ]
   ],
   "plugins": [
-    ["babel-plugin-module-resolver", {
-      "alias": {
-        "app": "./src"
+    [
+      "babel-plugin-module-resolver",
+      {
+        "alias": {
+          "app": "./src"
+        }
       }
-    }]
+    ],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ]
   ]
 }
